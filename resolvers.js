@@ -21,7 +21,7 @@ const resolvers = {
     },
     deleteTask: async (_, { id }) => {
       await Task.findByIdAndDelete(id);
-      return "TASK DELETED";
+      return "TASK DELETED BY CARLO JEJE";
     },
     updateTask: async (_, { task, id }) => {
       const taskUpdated = await Task.findByIdAndUpdate(
