@@ -25,7 +25,7 @@ async function start() {
     app.use('*', (req, res)=>res.status(404).send("page not found"))
 
     app.listen(process.env.PORT , ()=> {
-        console.log('Server on port 3000')
+        console.log(`Server on port ${process.env.PORT}`)
     })
 }
 start()
